@@ -1,149 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Salary Transparency</title>
         <link rel=stylesheet href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c1e8cf45d6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/berlin-sans-fb');
+      body {
+        background-color: #707672;
+      }
+      </style>
     </head>
 
     <body>
 
     <!----------------------HEADER------------------------------->
         <header>
-            <nav>
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#about">ABOUT US</a></li>
-                        <li><a href="#rank">RANKING</a></li>
-                        <li><a href="#contact">CONTACT US</a></li>                   
-                    </ul>
-                </div>
+            <nav class="nav-links">
+                <div class="btn" id="logIn"><a href="#">Log In</a></div>
+                <div class="btn" id="register"><a href="#">Register</a></div>
             </nav>
-
-
+            
+            <img class="whiteMid" src="logoWhite.png">
+            
             <div class= "text-box">
                 <h1>Salary Transparency</h1>
                 <p>Salary you Deserve.</p>
-                <a href=" " class="btn btn-primary">Employee</a>
-                <a href=" " class="btn btn-primary">Company</a>
             </div> 
+
+            <div class="btn" id="asCompany"> <a href="companyForm.html"> Company </a></div>
+
+            <div class="btn" id="asEmployee"><a href="employeeForm.html">Employee</a></div>
+
         </header>
+<!---------------------About US----------------------->
 
         <section id="about">
-            <div class="about-us">    
-            <a href="#rank" class="btn btn-primary">See Rankings</a>
-                <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Dicta, eligendi sit, non mollitia nisi nemo autem neque distinctio minus quae rerum. 
-                     Consectetur natus optio quas, aperiam culpa unde nesciunt. Harum!</p>
-            </div>
-            <a href=" " class="btn btn-primary">LogIn</a>
+            <img class="logoTopLeft" src="logoWhite.png"></img>
+            <div class="btn" id="rankings"><a href="ranking.html">See Rankings</a></div>
+            <img class="maleFemale" src="maleFemale.png"></img>
+            <div class="about-us">
+                About<br>Us</div>
+            <div class="details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, omnis? Odio, ullam provident eligendi est dolorum voluptates deserunt quia illum, nisi maxime praesentium enim eaque dolores ab, sit a facere atque nobis modi expedita beatae delectus amet! Ab inventore aut dolor recusandae. Fugiat ducimus rem quis voluptatem repellat eius inventore.</div>
+            <div class="btn" id="logInaboutus"><a href="#">Log In</a></div>
         </section>
 
 
-        <section id="rank">
-            <div class="leaderboard">
-                <div class="float-left">
-                    <img src="">
-                    <a href=" " class="btn btn-primary">LogIn</a>
-                    <a href="#about" class="btn btn-primary">Back</a>
-                </div>
-
-                <div class="float-right">
-                    <h1>Our Ranking</h1>
-                    <table>
-                    <thead>
-                        <tr>
-                          <th class="rank"></th>
-                          <th class="nick">Name of Organization</th>
-                          <th class="sp">No of Employee</th>
-                          <th class="kd">No of Women Employee</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="rank">1</td>
-                          <td class="nick">Sc0utOP</td>
-                          <td class="sp">6.308</td>
-                          <td class="kd">4.8</td>
-                        </tr>
-                        <tr>
-                          <td class="rank">2</td>
-                          <td class="nick">MortaL</td>
-                          <td class="sp">6.301</td>
-                          <td class="kd">4.5</td>
-                        </tr>
-                        <tr>
-                          <td class="rank">4</td>
-                          <td class="nick">CarryMinati</td>
-                          <td class="sp">5.108</td>
-                          <td class="kd">2.1</td>
-                        </tr>
-                        <tr>
-                          <td class="rank">5</td>
-                          <td class="nick">CarryMinati</td>
-                          <td class="sp">5.108</td>
-                          <td class="kd">2.1</td>
-                        </tr>
-                        <tr>
-                          <td class="rank">6</td>
-                          <td class="nick">CarryMinati</td>
-                          <td class="sp">5.108</td>
-                          <td class="kd">2.1</td>
-                        </tr>
-                        <tr>
-                          <td class="rank">7</td>
-                          <td class="nick">CarryMinati</td>
-                          <td class="sp">5.108</td>
-                          <td class="kd">2.1</td>
-                        </tr>
-                        <tr>
-                          <td class="rank">8</td>
-                          <td class="nick">CarryMinati</td>
-                          <td class="sp">5.108</td>
-                          <td class="kd">2.1</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                </div>
-        
-               
-            </div>
-        </section>
-    
-
-        <footer>
-            <div>
-                <div>
+<!----------------------FOOTER----------------------
+        <footer class="footer">
+            <div class="inner-footer">
+                <div class="social-links">
                     <ul>
-                        <li>
+                        <li class="social-items">
                             <a href="https://www.facebook.com" target="_blank">
                                 <i class="fab fa-facebook"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="social-items">
                             <a href="https://www.instagram.com" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="social-items">
                             <a href="https://www.linkedin.com" target="_blank">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://twitter.com" target="_blank">
-                                <i></i>
+                        <li class="social-items">
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
+                <div class="contact">
+                    <ul>
+                        <li class="contact-items"><i class="fas fa-map-marker-alt">Kathmandu</i></li>
+                        <li class="contact-items"><i class="fas fa-phone-alt">+977-9741232344</i></li>
+                        <li class="contact-items"><i class="fas fa-envelope">salarytransparency@gmail.com</i></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                copyright 2021 &copy; salaryTransparency.All rights reserved.
+            <div class="outer-footer">
+                copyright 2021 &copy;salaryTransparency.All rights reserved.
             </div>
-
         </footer>
+    -->
+    
     </body>
 </html>
